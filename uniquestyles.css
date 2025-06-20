@@ -1,0 +1,8 @@
+.stylescrollbar{
+  scrollbar-color: rgb(81, 80, 80) transparent;
+  scrollbar-width: thin;
+  
+}
+.stylescrollbar:not(:hover){
+  scrollbar-width: none;
+}
