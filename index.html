@@ -8,10 +8,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="./uniquestyles.css">
     </head>
-    <body class="bg-white dark:bg-black min-h-screen flex flex-col">
-      <nav class="px-2 py-1 flex justify-between items-center sticky top-0">
+    <body class="bg-white h-full dark:bg-black flex flex-col">
+      <nav class="h-[15%] px-2 py-1 flex justify-between items-center sticky top-0">
         <div class="flex items-center gap-4">
-          <div class="px-[4px] py-[4px]"><img src="./log blanco de spotify.png" alt="Spotify Logo" class="rounded-full  w-12 h-12"></div>
+          <div class="px-[4px] py-[4px]"><img src="./src/log blanco de spotify.png" alt="Spotify Logo" class="rounded-full  w-12 h-12"></div>
           <div class="w-[50px] h-[50px] bg-zinc-900 rounded-full hover:scale-[105%] hover:bg-zinc-600 text-white flex items-center justify-center">
             <i class="fa-solid fa-house text-xl"></i>
           </div>
@@ -38,7 +38,7 @@
           <div class=" p-[20px] flex lg:hidden"><i class="fa-solid fa-bars text-white"></i></div>
         </div>
       </nav>
-      <main class="flex flex-wrap justify-between px-5">
+      <main class="h-70% flex flex-wrap h-[70%] justify-between px-5">
         <aside class="bg-[rgb(18,18,18)] top-20 z-10 h-[88vh] w-[400px] rounded-[8px] flex flex-col gap-4 p-2" aria-label="Sidebar">
           <div class="flex items-between justify-between pb-[20px]">
             <h2 class="text-white text-lg font-semibold">Tu biblioteca</h2>
@@ -75,14 +75,63 @@
         </div>          
         </aside>
       <!-- Contenido principal -->
-      <div class=" bg-[rgb(33,33,33)] flex-1 ml-4 max-w-[88%] rounded-[8px]">
-      </div>
-</main>
-      <footer class="bg-[rgb(18,18,18)] text-white p-4 mt-4 rounded-lg">
-        <div class="flex justify-between items-center">
-          <p class="text-sm">© 2023 CloneducativoSpotify. Todos los derechos reservados.</p>
-          <div class="flex gap-4">
-            <a href="#" class="text-white
+      <section class=" bg-[rgb(33,33,33)] flex-1 ml-4 rounded-[8px] ">
+        <div class="flex items-baseline justify-between p-8">
+            <h1 class="text-white font-bold text-2xl hover:underline cursor-pointer">Canciones del momento</h1>
+            <p class="text-neutral-400 font-semibold text-base hover:underline cursor-pointer">Mostrar todo</p>
+        </div>
+        <div class="flex">
+            <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
+              <img src="./src/Luis miguel 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <p class="hover:underline">Contigo en la Distancia</p>
+              <p class="hover:underline">Luis Miguel</p>              
+            </div>  
+            
+            <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
+              <img src="./src/cristian castro 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <p class="hover:underline">Por Amarte Asi</p>
+              <p class="hover:underline">Cristian Castro</p>              
+            </div>  
+            
+            <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
+              <img src="./src/michael jackson 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <p class="hover:underline">Black or White</p>
+              <p class="hover:underline">Michael Jackson </p>              
+            </div> 
 
+            <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
+              <img src="./src/Ricardo montaner 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <p class="hover:underline">Si Tuviera Que Elegir</p>
+              <p class="hover:underline">Ricardo Montaner</p>              
+            </div> 
+
+                      
+            </div>
+
+
+        </div>
+
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+
+      
+</main>
+     
     </body>
 </html>
