@@ -9,9 +9,12 @@
       <link rel="stylesheet" href="./uniquestyles.css">
     </head>
     <body class="bg-white h-full dark:bg-black flex flex-col">
+      <!--- barra de navegación -->
       <nav class="h-[15%] px-2 py-1 flex justify-between items-center sticky top-0">
         <div class="flex items-center gap-4">
-          <div class="px-[4px] py-[4px]"><img src="./src/log blanco de spotify.png" alt="Spotify Logo" class="rounded-full  w-12 h-12"></div>
+          <div class="px-[4px] py-[4px]">
+            <img src="./src/log blanco de spotify.png" alt="Spotify Logo" class="rounded-full  w-12 h-12">
+          </div>
           <div class="w-[50px] h-[50px] bg-zinc-900 rounded-full hover:scale-[105%] hover:bg-zinc-600 text-white flex items-center justify-center">
             <i class="fa-solid fa-house text-xl"></i>
           </div>
@@ -20,7 +23,7 @@
             <input type="text" placeholder="¿Qué quieres reproducir?" class="text-gray-200 hidden lg:flex outline-none w-[260px] h-[32px] bg-transparent pl-2" />
             <div class="h-6 w-[1px] bg-gray-200 opacity-50 mr-2"></div>
             <i class="fa-solid fa-folder-open text-white text-2xl mr-2"></i>
-          </aside>
+          </div>
         </div>
         <div class="flex items-center gap-8">
           <div class="flex items-center gap-2 hidden lg:flex">
@@ -35,124 +38,117 @@
           </div>
           <p class="text-neutral-400 font-semibold hover:text-white text-base cursor-pointer transform transition-transform duration-300 hover:scale-105 hidden lg:flex">Registrarte</p>
           <button class="bg-white px-[20px] py-[10px] text-base font-semibold rounded-full hover:scale-[105%] hover:bg-neutral-200 hidden lg:flex">Iniciar sesión</button>
-          <div class=" p-[20px] flex lg:hidden"><i class="fa-solid fa-bars text-white"></i></div>
+          <div class=" p-[20px] flex lg:hidden">
+            <i class="fa-solid fa-bars text-white"></i>
+          </div>
         </div>
       </nav>
-      <main class="h-70% flex flex-wrap h-[70%] justify-between px-5">
-        <aside class="bg-[rgb(18,18,18)] top-20 z-10 h-[500px] w-[370px] overflow-y-auto rounded-[8px] flex flex-col gap-4 p-2" aria-label="Sidebar">
-          <div class="flex items-between justify-between pb-[20px]">
-            <h2 class="text-white text-lg font-semibold">Tu biblioteca</h2>
-            <p class="text-neutral-400 text-2xl font-bold">+</p>
-          </div>
-        <section class="flex flex-col gap-4 h-[150px] overflow-y-auto stylescrollbar">
-          <div class="bg-[rgb(31,31,31)] rounded-md p-4 text-white">
-            <h2 class="font-bold mb-2">Crea tu primera playlist</h2>
-            <p class="mb-4">¡Es muy fácil! Te vamos a ayudar</p>
-            <button class="bg-white text-black px-4 py-1 rounded-3xl transition-transform duration-200 hover:scale-105">
-            Crear playlist</button>
-          </div>
-          <div class="bg-[rgb(31,31,31)] rounded-md p-4 text-white">
-            <h2 class="mb-2">Busquemos algunos podcasts para seguir</h2>
-            <p class="mb-4">Te mantendremos al tanto de los nuevos episodios.</p>
-            <button class="bg-white text-black px-4 py-1 rounded-3xl transition-transform duration-200 hover:scale-105">
-            Explorar podcasts
-            </button>
-          </div>
-        </section>
-        <div class="w-full max-w-screen-sm text-xs mt-7 text-white flex flex-wrap gap-x-6 gap-y-3 md:justify-start px-4">
-          <p class="mb-0">Legal</p>
-          <p class="mb-0">Seguridad y Centro de Privacidad</p>
-          <p class="mb-0">Política de Privacidad</p>
-          <p class="mb-0">Cookies</p>
-          <p class="mb-0">Sobre Anuncios</p>
-          <p class="mb-0">Accesibilidad</p>
-          <p class="mb-0">Cookies</p>
+      <!-- Cobtenedor pricipal-->
+    <main class="h-70% flex flex-wrap h-[70%] justify-between px-5">
+      <!-- Barra lateral o aside -->
+      <aside class="bg-[rgb(18,18,18)] top-20 z-10 h-[460px] w-[370px] overflow-y-auto rounded-[8px] flex flex-col gap-4 p-2" aria-label="Sidebar">
+        <div class="flex items-between justify-between pb-[20px]">
+          <h2 class="text-white text-lg font-semibold">Tu biblioteca</h2>
+          <p class="text-neutral-400 text-2xl font-bold">+</p>
         </div>
-        <div class="w-full flex justify-left">
-          <button class="inline-flex items-center font-medium text-sm mt-6 gap-[4px] text-white border border-white rounded-3xl px-3 py-[3px] hover:scale-105 transition-transform duration-100">
-            <i class="fas fa-globe"></i> <span>Español de Latinoamérica</span>
+      <section class="flex flex-col gap-4 h-[150px] overflow-y-auto stylescrollbar">
+        <div class="bg-[rgb(31,31,31)] rounded-md p-4 text-white">
+          <h2 class="font-bold mb-2">Crea tu primera playlist</h2>
+          <p class="mb-4">¡Es muy fácil! Te vamos a ayudar</p>
+          <button class="bg-white text-black px-4 py-1 rounded-3xl transition-transform duration-200 hover:scale-105">
+          Crear playlist</button>
+        </div>
+        <div class="bg-[rgb(31,31,31)] rounded-md p-4 text-white">
+          <h2 class="mb-2">Busquemos algunos podcasts para seguir</h2>
+          <p class="mb-4">Te mantendremos al tanto de los nuevos episodios.</p>
+          <button class="bg-white text-black px-4 py-1 rounded-3xl transition-transform duration-200 hover:scale-105">
+          Explorar podcasts
           </button>
-        </div>          
-        </aside>
-      <!-- Contenido principal -->
-      <section class=" bg-[rgb(33,33,33)] flex-1 ml-4 h-[500px] overflow-auto stylescrollbar rounded-[8px] ">
+        </div>
+      </section>
+      <div class="w-full max-w-screen-sm text-xs mt-7 text-white flex flex-wrap gap-x-6 gap-y-3 md:justify-start px-4">
+        <p class="mb-0">Legal</p>
+        <p class="mb-0">Seguridad y Centro de Privacidad</p>
+        <p class="mb-0">Política de Privacidad</p>
+        <p class="mb-0">Cookies</p>
+        <p class="mb-0">Sobre Anuncios</p>
+        <p class="mb-0">Accesibilidad</p>
+        <p class="mb-0">Cookies</p>
+      </div>
+      <div class="w-full flex justify-left">
+        <button class="inline-flex items-center font-medium text-sm mt-6 gap-[4px] text-white border border-white rounded-3xl px-3 py-[3px] hover:scale-105 transition-transform duration-100">
+          <i class="fas fa-globe"></i> <span>Español de Latinoamérica</span>
+        </button>
+      </div>          
+      </aside>
+    <!-- Contenido principal -->
+      <section class=" bg-[rgb(33,33,33)] flex-1 ml-4 h-[460px] overflow-auto stylescrollbar rounded-[8px] ">
         <div class="flex items-baseline justify-between p-8">
             <h1 class="text-white font-bold text-2xl hover:underline cursor-pointer">Canciones del momento</h1>
             <p class="text-neutral-400 font-semibold text-base hover:underline cursor-pointer">Mostrar todo</p>
         </div>
         <div class="flex">
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/Luis miguel 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <img src="./src/Luis miguel 1.jpeg" class="w-[150px] h-auto object-cover rounded-md mb-[7px] ">
               <p class="hover:underline">Contigo en la Distancia</p>
               <p class="hover:underline">Luis Miguel</p>              
             </div>            
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/cristian castro 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <img src="./src/cristian castro 1.jpeg" class="w-[150px] h-auto object-cover rounded-md mb-[7px] ">
               <p class="hover:underline">Por Amarte Asi</p>
               <p class="hover:underline">Cristian Castro</p>              
             </div>             
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/michael jackson 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <img src="./src/michael jackson 1.jpeg" class="w-[150px] h-auto object-cover rounded-md mb-[7px] ">
               <p class="hover:underline">Black or White</p>
               <p class="hover:underline">Michael Jackson </p>              
             </div>
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/Ricardo montaner 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
+              <img src="./src/Ricardo montaner 1.jpeg" class="w-[150px] h-auto object-cover rounded-md mb-[7px] ">
               <p class="hover:underline">Si Tuviera Que Elegir</p>
               <p class="hover:underline">Ricardo Montaner</p>              
             </div>     
         </div>
-
-
-
-        <div class="flex items-baseline justify-between p-8">
-            <h1 class="text-white font-bold text-2xl hover:underline cursor-pointer">Canciones del momento</h1>
+        <div class="flex items-baseline justify-between mt-8 p-8">
+            <h1 class="text-white font-bold text-2xl hover:underline cursor-pointer">Artistas populares</h1>
             <p class="text-neutral-400 font-semibold text-base hover:underline cursor-pointer">Mostrar todo</p>
         </div>
         <div class="flex">
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/Luis miguel 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
-              <p class="hover:underline">Contigo en la Distancia</p>
-              <p class="hover:underline">Luis Miguel</p>              
+              <img src="./src/belle 1.jpeg" class="w-[150px] h-auto object-cover rounded-full mb-[7px] ">
+              <p class="hover:underline">Belle</p>
+              <p class="hover:underline">Artista</p>              
             </div>            
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/cristian castro 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
-              <p class="hover:underline">Por Amarte Asi</p>
-              <p class="hover:underline">Cristian Castro</p>              
+              <img src="./src/chinito lindo.jpeg" class="w-[150px] h-auto object-cover rounded-full mb-[7px] ">
+              <p class="hover:underline">j-hope</p>
+              <p class="hover:underline">Artista</p>              
             </div>             
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/michael jackson 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
-              <p class="hover:underline">Black or White</p>
-              <p class="hover:underline">Michael Jackson </p>              
+              <img src="./src/mora 1.jpeg" class="w-[150px] h-auto object-cover rounded-full mb-[7px] ">
+              <p class="hover:underline">Mora</p>
+              <p class="hover:underline">Artista</p>              
             </div>
             <div class="text-white items-center rounded-md mt-[-30px] p-6 hover:cursor-pointer hover:bg-black/10 transition-colors duration-300">
-              <img src="./src/Ricardo montaner 1.jpeg" class="w-[138px] h-auto object-cover rounded-md mb-[7px] ">
-              <p class="hover:underline">Si Tuviera Que Elegir</p>
-              <p class="hover:underline">Ricardo Montaner</p>              
+              <img src="./src/la culpa track.jpeg" class="w-[150px] h-auto object-cover rounded-full mb-[7px] ">
+              <p class="hover:underline">Alleh</p>
+              <p class="hover:underline">Artista</p>              
             </div>                       
         </div>
-      </section>
+      </section>    
+    </main>
 
+    <footer class="fixed bottom-0 left-0 w-full bg-gradient-to-r from-purple-900 to-blue-300 text-white px-6 py-3 flex justify-between items-center">
+      <div>
+        <p class="text-sm mb-1">Muestra de Spotify</p>
+        <p class="text-sm">Registrate para acceder a canciones y podcast ilimitados con algunos anuncios. No necesitas tarjeta de credito.</p>
+      </div>      
+      <div>
+        <button class="bg-white text-black px-4 py-2 rounded transition-transform duration-150 hover:scale-105">
+          Regístrate gratis
+        </button>
+      </div>
+    </footer>
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </section>
-
-      
-</main>
-     
     </body>
 </html>
